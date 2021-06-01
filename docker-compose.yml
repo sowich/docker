@@ -25,6 +25,7 @@ services:
     ports:
       - 8085:8080
   mysql:
+    platform: linux/x86_64
     image: mysql:latest
     command: --default-authentication-plugin=mysql_native_password
     restart: always
