@@ -8,7 +8,7 @@ services:
       - ./www:/var/www/html
       - ./docker/nginx:/etc/nginx/conf.d
     ports:
-      - 80:80
+      - "80:80"
   php-fpm:
     build:
       context: ./docker
@@ -23,7 +23,7 @@ services:
     environment:
       ADMINER_DEFAULT_SERVER: mysql
     ports:
-      - 8085:8080
+      - "8085:8080"
   mysql:
     platform: linux/x86_64
     image: mysql:latest
