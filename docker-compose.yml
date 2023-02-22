@@ -15,6 +15,8 @@ services:
       dockerfile: php-fpm.docker
     volumes:
       - ./www:/var/www/html
+    environment:
+      - PHP_IDE_CONFIG=serverName=phpServerName
   adminer:
     image: adminer:latest
     restart: always
