@@ -2,6 +2,7 @@ Prepare xdebug
 --------------
 1. Install extension "Xdebug helper" for Chrome.
 2. In settings PhpStorm:
+   
    2.1) Build, Execution, Deployment -> Docker
     ```sh
     Connection sucessfull
